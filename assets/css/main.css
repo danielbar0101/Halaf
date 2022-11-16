@@ -23,7 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: right;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1887,7 +1887,7 @@ input, select, textarea {
 			}
 
 				#header h1 {
-					text-align: center;
+					text-align: right;
 					position: relative;
 					left: 0;
 					top: 0;
