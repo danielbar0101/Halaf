@@ -6,6 +6,9 @@
 -->
 <html dir="rtl" lang="he">
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 		<title>Big Picture by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -20,10 +23,11 @@
 				<nav>
 					<ul>
 						<!-- <li><a href="#work">My Work</a></li> -->
-						<li><a href="#two">מי אנחנו</a></li>
-						<li><a href="#one">מה עוד אפשר לעשות</a></li>
-						<li><a href="#contact">דיווח</a></li>
 						<li><a href="#intro">ראשי</a></li>
+						<li><a href="#contact">דיווח</a></li>
+						<li><a href="#one">מה עוד אפשר לעשות</a></li>
+						<li><a href="#two">מי אנחנו</a></li>
+
 
 					</ul>
 				</nav>
@@ -53,11 +57,24 @@
 					<div class="box">
 						<form method="post" action="#">
 							<div class="fields">
-								<div class="field half"><input type="number" min="0" name="name" placeholder="מספר קו" /></div>
-								<div class="field half"><input type="number" min="0" name="email" placeholder="מספר תחנה" /></div>
-								<div class="field half"><input type="datetime-local" name="email" placeholder="שעה ותאריך" /></div>
+								<div class="field third"><input type="number" min="0" name="name" placeholder="מספר קו" /></div>
+								<div class="field third"><input type="number" min="0" name="email" placeholder="מספר תחנה" /></div>
+								<div class="field third"><input type="datetime-local" name="email" placeholder="שעה ותאריך" /></div>
 								<div class="field half"><input type="email" name="email" placeholder="כתובת אימייל" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="חברה" /></div>
+								<div class="field half">
+									<select name="dropdown" size="1">
+									<option value="Option1">דן</option>
+									<option value="Option2">אגד</option>
+									<option value="Option3">מטרופולין</option>
+									<option value="Option4">נתיב אקספרס</option>
+									<option value="Option2">קווים</option>
+									<option value="Option3">מטרודן</option>
+									<option value="Option4">סופרבוס</option>
+									<option value="Option3">ג'י בי טורס</option>
+									<option value="Option4">אפיקים</option>
+									<option value="Option3">מאוחדים</option>
+									<option value="Option4">אחר</option>
+									</select> </div>
 								<div class="field"><textarea name="message" placeholder="שם מלא ומסר לאומה" rows="6"></textarea></div>
 							</div>
 							<ul class="actions special">
@@ -72,7 +89,7 @@
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>מה עוד אפשר לעשות</h2>
+						<h2>מה עוד אפשר לעשות?</h2>
 					</header>
 					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
 					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
@@ -85,7 +102,7 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>מי אנחנו</h2>
+						<h2>מי אנחנו?</h2>
 					</header>
 					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
 					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
