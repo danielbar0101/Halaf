@@ -16,6 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 	</head>
 	<body class="is-preload">
 
@@ -55,11 +56,11 @@
 						<p style="font-family: Heebo">נא למלא את כל הפרטים של הקו החולף, כולל חברה מפעילה. ניתן להוסיף פרטים כמו מספר לוחית הרישוי או מסר  </p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
+						<form id="form">
 							<div class="fields">
-								<div class="field third"><input type="number" min="0" name="name" placeholder="מספר קו" /></div>
-								<div class="field third"><input type="number" min="0" name="email" placeholder="מספר תחנה" /></div>
-								<div class="field third"><input type="datetime-local" name="email" placeholder="שעה ותאריך" /></div>
+								<div class="field third"><input type="number" min="0" name="LineNumber" placeholder="מספר קו"  /></div>
+								<div class="field third"><input type="number" min="0" name="station" placeholder="מספר תחנה"  /></div>
+								<div class="field third"><input type="datetime-local" name="timedate" placeholder="שעה ותאריך"  /></div>
 								<div class="field half"><input type="email" name="email" placeholder="כתובת אימייל" /></div>
 								<div class="field half">
 									<select name="dropdown" size="1">
@@ -78,9 +79,12 @@
 								<div class="field"><textarea name="message" placeholder="מסר לאומה" rows="6"></textarea></div>
 							</div>
 							<ul class="actions special">
-								<li><input type="submit" value="דיווח בכל הכוח" /></li>
+								<li><input id="submit" type="submit" value="דיווח בכל הכוח" onclick="on_submit()" /></li>
 							</ul>
 						</form>
+						<div class="results">
+							<p class="result-json-output"></p>
+						</div>
 					</div>
 				</div>
 			</section>
