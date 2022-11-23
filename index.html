@@ -11,12 +11,30 @@
 		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
 
-		<title>Big Picture by HTML5 UP</title>
+		<title>חלף</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.js"
+		  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		  crossorigin="anonymous"></script>
+		<script>
+		function SubForm (){
+			$.ajax({
+				url:'https://api.apispreadsheets.com/data/DlgbfOtxnllw3O15/',
+				type:'post',
+				data:$("#myForm").serializeArray(),
+				success: function(){
+				  alert("Form Data Submitted :)")
+				},
+				error: function(){
+				  alert("There was an error :(")
+				}
+			});
+		}
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -56,7 +74,7 @@
 						<p style="font-family: Heebo">נא למלא את כל הפרטים של הקו החולף, כולל חברה מפעילה. ניתן להוסיף פרטים כמו מספר לוחית הרישוי או מסר  </p>
 					</header>
 					<div class="box">
-						<form id="form">
+						<form id="myForm">
 							<div class="fields">
 								<div class="field third"><input type="number" min="0" name="LineNumber" placeholder="מספר קו"  /></div>
 								<div class="field third"><input type="number" min="0" name="station" placeholder="מספר תחנה"  /></div>
@@ -79,12 +97,9 @@
 								<div class="field"><textarea name="message" placeholder="מסר לאומה" rows="6"></textarea></div>
 							</div>
 							<ul class="actions special">
-								<li><input id="submit" type="submit" value="דיווח בכל הכוח" onclick="on_submit()" /></li>
+								<input id="submit" type="submit" value="דיווח בכל הכוח" onclick="SubForm()"/>
 							</ul>
 						</form>
-						<div class="results">
-							<p class="result-json-output"></p>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -181,6 +196,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+
 
 	</body>
 </html>
