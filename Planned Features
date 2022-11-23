@@ -1,6 +1,13 @@
-Add mandatory fields
+1.0
+*Add mandatory fields
+*Add a "thank you" window after submission
+*Add an ID for every report
+
+1.1
+Reports section on the website
+
+
 Limit the amount of reports one user can send
-Link the replies on the form to a CSV
 Bus station number selection from an API options
 Correlating the reported line with the station number (if this line is actually going through it)
 Sending recordings
