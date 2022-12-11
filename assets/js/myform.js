@@ -9,6 +9,7 @@ let reports = [];
             email: document.getElementById('email').value
             Company: document.getElementById('dropdown').value
             message: document.getElementById('message').value
+            newsletter: document.getElementById('newsletter').value
         }
         reports.push(report);
         document.forms[0].reset(); // to clear the form for the next entries

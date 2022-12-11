@@ -921,18 +921,22 @@ input, select, textarea {
 
 	::-webkit-input-placeholder {
 		opacity: 0.375;
+		color: black;
 	}
 
 	:-moz-placeholder {
 		opacity: 0.375;
+		color: black;
 	}
 
 	::-moz-placeholder {
 		opacity: 0.375;
+		color: black;
 	}
 
 	:-ms-input-placeholder {
 		opacity: 0.375;
+		color: black;
 	}
 
 /* Icon */
