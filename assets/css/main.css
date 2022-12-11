@@ -65,11 +65,16 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
+input[type="checkbox"] {
+    appearance: checkbox !important;
+}
+
 input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+
 }
 
 /* Basic */
