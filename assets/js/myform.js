@@ -1,5 +1,4 @@
 let reports = [];
-    // example {id:1592304983049, title: 'Deadpool', year: 2015}
     const addReport = (ev)=>{
         ev.preventDefault();  //to stop the form submitting
         let report = {
@@ -24,5 +23,5 @@ let reports = [];
         localStorage.setItem('ReportsList', JSON.stringify(reports) );
     }
     document.addEventListener('DOMContentLoaded', ()=>{
-        document.getElementById('btn').addEventListener('click', addReport);
+        document.getElementById('submit').addEventListener('click', addReport);
     });
